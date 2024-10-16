@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    while(true)
+    {
+        unsigned  long long int a;
+        int z,x;
+        z=1;
+        cout<<"Enter a number : ";
+        cin>>a;
+        x=a;
+        if(a>1)
+        {
+            while(x>2&&z!=0)
+            {
+                z=a%(x-1);
+                x--;
+            }
+            if(z==0)
+            cout<<"It is not a prime number.";
+            else
+            cout<<"It is a prime number. ";
+
+        }
+        else 
+        {
+        cout<<"Invalid input.";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
